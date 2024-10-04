@@ -1,10 +1,10 @@
 <?php
 
-class Animal {
+abstract class Animal {
 
-    public $nome;
-    public $cor;
-    public $raca;
+    protected $nome;
+    protected $cor;
+    protected $raca;
 
     public function __construct($_nome,$_cor,$_raca)
     {

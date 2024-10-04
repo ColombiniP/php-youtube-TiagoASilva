@@ -10,15 +10,28 @@
 *
  */
 
-include 'Animal.php';
+// include 'Animal.php';
+require 'Gato.php';
+require 'Cao.php';
 
-$gato = new Animal("Anibal", "Laranja", "Angora");
+// $gato = new Animal("Anibal", "Laranja", "Angora");
 
-$gato->dormir();
-$gato->comer("Wiskas");
+// $gato->dormir();
+// $gato->comer("Wiskas");
+
+// echo "<hr>";
+
+// $cao = new Animal("Vladimir","preto","dog_alemao");
+
+// $cao->dormir();
+
+// echo "<hr>";
+
+$gato_salazar = new Gato("Salazar","Cinza","undefinid");
+$gato_salazar->comer("Ração");
+$gato_salazar->miar();
 
 echo "<hr>";
 
-$cao = new Animal("Vladimir","preto","dog_alemao");
-
-$cao->dormir();
+$cao = new Cao("Noris", "Branco", "Colle");
+$cao->latir();
